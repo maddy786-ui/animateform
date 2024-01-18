@@ -1,0 +1,114 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Lemon';
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-image: url('2154.jpg');
+    background-size: cover;
+}
+.box{
+    position: relative;
+    width: 380px;
+    height: 380px;
+    background-color: #00ff40;
+    border-radius: 15px;
+}
+form{
+    position: absolute;
+    inset: 1px;
+    background: #374053;
+    padding: 30px 35px;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    box-shadow: rgba(132, 255, 0, 0.5) 0px 4px 16px;
+}
+h1{
+   color: #00ff40;
+   text-align: center;
+}
+.wrap-input{
+    position: relative;
+    width: 305px;
+    margin-top: 30px;
+}
+.wrap-input input{
+   width: 100%;
+   padding: 20px 10px 10px;
+   background-color: transparent;
+   outline: none;
+   box-shadow: none;
+   border: none;
+   color: black;
+   font-size: 1em;
+   letter-spacing: 0.05em;
+   transition: 0.05s;
+   z-index: 1;
+}
+.wrap-input span{
+    position: absolute;
+    left: 0;
+    padding: 20px 0px 10px;
+    pointer-events: none;
+    font-size: 1em;
+    color: #8f8f8f;
+    letter-spacing: 0.05em;
+    transition: 0.5s;
+}
+.wrap-input input:valid ~ span,
+.wrap-input input:focus ~ span{
+    color: #00fa3f;
+    transform: translateX(0px) translateY(-34px);
+    font-size: 1em;
+}
+.wrap-input i{
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 2px;
+    background-color: #00ff40;
+    border-radius: 4px;
+    overflow: hidden;
+    transition: 0.5s;
+    pointer-events: none;
+    box-shadow: rgba(132, 255, 0, 0.5) 0px 4px 16px;
+}
+.wrap-input input:valid ~ i,
+.wrap-input input:focus ~ i{
+    height: 90%;
+}
+.links{
+    display: flex;
+    justify-content: space-between;
+}
+.links a{
+    margin: 10px 0;
+    font-size: 0.75em;
+    color: #8f8f8f;
+    text-decoration: beige;
+}
+.links a:hover,
+.links a:nth-child(2){
+    color: #00ff40;
+}
+input[type='submit']{
+    border: none;
+    outline: none;
+    padding: 11px 25px;
+    background-color: #00ff40;
+    cursor: pointer;
+    border-radius: 4px;
+    font-weight: 600;
+    margin-top: 10px;
+    color: #006d1b;
+}
+input[type='submit']:active{
+    opacity: 0.5;
+}
